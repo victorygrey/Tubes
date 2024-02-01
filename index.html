@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags-->
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <!-- Color theme for statusbar (Android only) -->
+  <meta name="theme-color" content="#2196f3" />
+  <!-- Your app title -->
+  <title>My App</title>
+  <!-- Path to Framework7 Library Bundle CSS -->
+  <link rel="stylesheet" href="node_modules/framework7/framework7-bundle.min.css" />
+  <!-- Path to your custom app styles-->
+  <link rel="stylesheet" href="" />
+</head>
+
+<body>
+  <!-- App root element -->
+  <div id="app">
+    <!-- Your main view, should have "view-main" class -->
+    <div class="view view-main">
+      <!-- Initial Page, "data-name" contains page name -->
+      <div data-name="home" class="page">
+        <!-- Top Navbar -->
+        <div class="navbar">
+          <div class="navbar-bg"></div>
+          <div class="navbar-inner">
+            <div class="title">Coffeelih Kamu</div>
+          </div>
+        </div>
+
+        <!-- Bottom Toolbar -->
+        <div class="toolbar toolbar-bottom">
+          <div class="toolbar-inner">
+            <!-- Toolbar links -->
+            <a href="pages/kasir/login.html" class="link">Login</a>
+            <a href="#" class="link">Link 2</a>
+          </div>
+        </div>
+
+        <!-- Conten Field ISI Pemesan -->
+        <div class="page-content">
+          <div class="block" style="border: 10px solid #000; text-align: center; padding: 20px">
+            <form action="pages/module/input_pesanan.php" method="post">
+              <div class="list">
+                <ul>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title item-label">Nama Pemesanan</div>
+                        <div class="item-input">
+                          <input type="text" placeholder="Masukkan nama" id="nama_pemesan" name="nama_pemesan" />
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title item-label">Nomor Meja</div>
+                        <div class="item-input">
+                          <input type="text" placeholder="Masukkan nomor meja" id="nomorMeja" name="nomorMeja" />
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-inner">
+                        <div class="item-title item-label">Pesanan</div>
+                        <div class="item-input">
+                          <div class="list list-strong-ios list-outline-ios list-dividers-ios">
+                            <ul>
+                              <li>
+                                <label class="item-checkbox item-checkbox-icon-start item-content">
+                                  <input type="checkbox" name="coffee" id="coffee" value="cappucinno" />
+                                  <i class="icon icon-checkbox"></i>
+                                  <div class="item-inner">
+                                    <div class="item-title">Cappucinno</div>
+                                  </div>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="item-checkbox item-checkbox-icon-start item-content">
+                                  <input type="checkbox" name="coffee" id="coffee" value="mochacinno" />
+                                  <i class="icon icon-checkbox"></i>
+                                  <div class="item-inner">
+                                    <div class="item-title">Mochacinno</div>
+                                  </div>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="item-checkbox item-checkbox-icon-start item-content">
+                                  <input type="checkbox" name="coffee" id="coffee" value="espresso" />
+                                  <i class="icon icon-checkbox"></i>
+                                  <div class="item-inner">
+                                    <div class="item-title">Espresso</div>
+                                  </div>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="item-checkbox item-checkbox-icon-start item-content">
+                                  <input type="checkbox" name="coffee" id="coffee" value="white-coffee" />
+                                  <i class="icon icon-checkbox"></i>
+                                  <div class="item-inner">
+                                    <div class="item-title">White Coffee</div>
+                                  </div>
+                                </label>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <input class="button button-fill color-green" type="submit" value="Pesan">
+              <!-- <button class="button button-fill color-green" onclick="pesan()">
+                Pesan
+              </button> -->
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Path to Framework7 Library Bundle JS-->
+  <script type="text/javascript" src="node_modules/framework7/framework7-bundle.min.js"></script>
+  <!-- Path to your app js-->
+  <script type="text/javascript" src="my-app.js"></script>
+</body>
+
+</html>
